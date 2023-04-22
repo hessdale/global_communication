@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <toast-notification></toast-notification>
+    <delete-button></delete-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ToastNotification from "@/components/ToastNotification.vue";
+import DeleteButton from "@/components/DeleteButton.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ToastNotification,
+    DeleteButton,
+  },
+};
 </script>
 
 <style>
